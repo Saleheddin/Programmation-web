@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/tables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- add a button to the home page -->
+        <div class="logo">
+            <img src="assets/Images/Logo.png" alt="BookBorrow" />
+        </div>
+        <!-- add a button to the home page -->
+        <div class="nav">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Home</a>
+        </div>
+        
+    </header>
+    <h1>Table about the borrows registred</h1>
+    <table>
+        <tr>
+            <th>User</th>
+            <th>Firts name</th>
+            <th>Last name</th>
+            <th>add</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Saleh eddine</td>
+            <td>el fdali</td>    
+            <td>
+                <form action="editUser" method="post">
+                    <button>
+                        <img src="assets/Images/edit.png" alt="edit" class="icon" />
+                    </button>
+                    <button>
+                        <img src="assets/Images/delete.png" alt="delete"class="icon" />
+                    </button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3"></td>
+            <td>
+                <form action="addUser" method="post">
+                    <button>
+                        <img src="assets/Images/add.png" alt="add" class="icon" />
+                    </button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <title>BookBorrow - Sign Up</title>
     <link rel="stylesheet" type="text/css" href="assets/css/signingUp.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/loginStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1>Sign Up for BookBorrow</h1>
         <!-- add a button to the home page -->
         <div class="logo">
             <img src="assets/Images/Logo.png" alt="BookBorrow" />
@@ -22,6 +25,7 @@
         </div>
     </header>
     <main>
+        <h1>Sign Up for BookBorrow</h1>
         <form>
             <div class="form-group">
                 <label for="username">Username:</label>
@@ -39,9 +43,35 @@
                 <label for="confirm-password">Confirm Password:</label>
                 <input type="password" id="confirm-password" name="confirm-password">
             </div>
+            <p>Select your speciality<br />
+                <select name="mySpeciality">
+                    <option value=”-1” selected=”selected”>-</option>
+                    <option value=”1”>INFO</option>
+                    <option value=”2”>RV</option>
+                </select>
+            </p>
+            <p>Select your status<br />
+                <input type="checkbox" name="myStatus" value="teacher" />Teacher
+                <label for="myStatus"></label><br />
+                <input type="checkbox" name="myStatus" value="student" />student
+                <label for="myStatus"></label>
+            </p>
+
+            <!-- <p><button>Valid form</button> -->
+
             <button type="submit">Sign Up</button>
         </form>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
