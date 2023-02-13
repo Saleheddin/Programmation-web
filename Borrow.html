@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/loginStyle.css">
     <link rel="stylesheet" href="assets/css/tables.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Document</title>
 </head>
 
@@ -20,14 +21,16 @@
         </div>
         <!-- add a button to the home page -->
         <div class="nav">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="index.html">Home</a>
+            <a class="nav-item" href="about.html">About</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+            <a class="nav-item" href="index.html">Home</a>
         </div>
 
     </header>
     <h1>Table about the borrow and return date</h1>
-    <table>
+    <p>Here we should have the first name of the user who want to borrow the book</p>
+    <p>Here we should have the last name of the user who want to borrow the book</p>
+    <table class="table-hover">
         <tr>
             <th>date</th>
             <th>Title</th>
@@ -38,20 +41,23 @@
             <td>Atomic habits</td>
             <td>20-02-2023</td>
             <td>
-                <form action="editBook" method="post">
+                <form action="returnBook" method="post">
                     <button>
-                        <img src="assets/Images/edit.png" alt="edit" class="icon" />
-                    </button>
-                    <button>
-                        <img src="assets/Images/delete.png" alt="delete" class="icon" />
+                        <img src="assets/Images/return.png" alt="edit" class="icon" />
                     </button>
                 </form>
             </td>
         </tr>
         <tr>
-            <td colspan="3"></td>
+            <td colspan="3">
+                <select class="btn-center" name="subject" id="subject">
+                    <option class="text-center" value="First Book" selected="selected">First Book</option>
+                    <option class="text-center" value="Second Book">Second Book</option>
+                    <option class="text-center" value="Third book">Third book</option>
+                </select>
+            </td>
             <td>
-                <form action="addBook" method="post">
+                <form action="Borrowbook" method="post">
                     <button>
                         <img src="assets/Images/add.png" alt="add" class="icon" />
                     </button>
